@@ -91,6 +91,6 @@ for idx, (importo, data_pagamento) in enumerate(pagamenti, start=1):
         "data_inizio": data_inizio,
         "data_fine": data_fine
     })
-    output_filename = f"output_files/ricevuta_scaleai_{data_pagamento.replace('/', '-')}.pdf"
+    output_filename = f"output_files/ricevuta_{data_pagamento.replace('/', '-')}.pdf"
     crea_pdf_dinamico(output_filename, dati_fattura)
     print(f"PDF generato: {output_filename}")
